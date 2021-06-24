@@ -4,7 +4,13 @@ metadata:
   name: configmap-demo-pod
 spec:
   containers:
-  - name: demo
-    image:alpine
-    command: ["sleep,"3600"]
+    - name: demo
+      image: alpine
+      command: ["sleep", "3600"]
+      env:
+      - name: PLAYER_INITIAL_LIVES
+        valueFrom:
+            configMapKeyRef:
+              name: game-demo
+              key: player_initial_lives 
     
