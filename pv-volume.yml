@@ -4,7 +4,7 @@ metadata:
   name: task-pv-volume
   labels:
     type: local
-spec;:
+spec:
   storageClassName: manual
   capacity:
     storage: 10Gi
