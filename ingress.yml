@@ -11,11 +11,10 @@ spec:
         backend:
           serviceName: helloworld-v1
           servicePort: 80
- - host: helloworld-v2.example.com
-   http:
-     paths:
-     - path: /
-       backend:
-         serviceName: helloworld-v2
-         servicePort: 80
-© 2021 GitHub, I
+  - host: helloworld-v2.example.com
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: helloworld-v2
+          servicePort: 80
